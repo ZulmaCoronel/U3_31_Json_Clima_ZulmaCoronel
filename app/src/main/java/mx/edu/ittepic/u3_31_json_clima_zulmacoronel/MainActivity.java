@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
     public void CargarClima() {
         try {
             conexionWeb = new ConexionWeb(MainActivity.this);
-            URL direcciopn = new URL("http://api.openweathermap.org/data/2.5/weather?q=Tepic,mx&APPID=043746939e7268316c8bbe640799c06d");
+            URL direcciopn = new URL("http://api.openweathermap.org/data/2.5/weather?q=Tepic,mx&APPID=a28ca27f03a6a5b40bf6f3d8b697926f");
+            //URL direcciopn = new URL(" http://samples.openweathermap.org/data/2.5/weather?q=London&appid=043746939e7268316c8bbe640799c06d");
             conexionWeb.execute(direcciopn);
         } catch (MalformedURLException e) {
             Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
